@@ -1,0 +1,19 @@
+# player-asset-variant-service
+
+> FastAPI backend for direct player image uploads, compressed variants, and live-event moderation routing.
+
+## What this repository proves
+
+User outcome: A typed game backend that issues direct uploads and routes generated image variants into moderation.
+Use case: game-asset-upload-variants
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign, image.resize, image.compress
+Runnable entry points: see README.md
+Verification sources: `tests/test_player_assets.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

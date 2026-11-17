@@ -1,0 +1,19 @@
+[project]
+name = "player-asset-variant-service"
+version = "0.1.0"
+description = "FastAPI service for direct game asset uploads and moderated image variants."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "httpx>=0.27,<1",
+  "pydantic>=2.8,<3",
+  "uvicorn>=0.30,<1",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.2,<9"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
